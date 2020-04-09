@@ -84,7 +84,7 @@ header {
     }
     .btn-signup{
         font-size: 14px;
-        background: none !important;
+        //background: none !important;
         border: none;
     }
 }
@@ -137,9 +137,14 @@ header {
     .empowerment{
         height: 400px !important;
     }
+    .wrap-contact-row__icon{
+        width: 40px!important;
+        height: 40px!important;
+    }
 }
 @media(max-width: 1222px){
     .menu-icon {
+        line-height: 0px!important;
         display: block!important;
   }
   .logo {
@@ -946,38 +951,105 @@ nav ul li {
                 padding: 0px;
                 margin: 0;
                 width: 100%;
-                .col-md-3{
+                .student-box{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    .slide{
-                        margin: 20px;
-                        padding: 0px;
-                        
-                        &-image img{
-                            border: 1px solid #565758;
-                            border-radius: 50%;
-                            width: 194px;
-                            height: 194;
-                            .image-3{
-                                background-image: url(../img/tv3.jpg);
-                                background-size: cover;
+                    a{
+                        width: 100%;
+                        .slide{
+                            margin: 20px;
+                            padding: 0px;
+                            
+                            &-image {
+                                border-radius: 50%;
+                                box-shadow: 2px 2px 2px solid;
+                                overflow: hidden;
+                                transition: all 1s;
+                                &-small{
+                                    padding: 50%;
+                                }
+                                
+                                &-1{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv1.jpg);
+                                }
+                                &-2{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv2.jpg);
+                                }
+                                &-3{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv3.jpg);
+                                }
+                                &-4{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv4.jpg);
+                                }
+                                &-5{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv5.jpg);
+                                }
+                                &-6{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv6.jpg);
+                                }
+                                &-7{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv7.jpg);
+                                }
+                                &-8{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size: cover;
+                                    //background-position: center;
+                                    background-image: url(../img/tv8.jpg);
+                                }
                             }
-                        }:hover{
-                            border: 5px solid red;
-                        }
-                        &-description{
-                            h2{
-                                font-size: 25px;
-                                padding-top: 8px;
-                            }
-                            p{
-                                text-align: center;
-                                color: rgb(173, 152, 152);
+                            &-description{
+                                h3{
+                                    margin-top: 1%;
+                                    font-size: 15px;
+                                    padding-top: 8px;
+                                }
+                                p{
+                                    text-align: center;
+                                    color: rgb(173, 152, 152);
+                                }
                             }
                         }
                     }
+                    a:hover{
+                        .slide-image-small{
+                            transform: scale(1.2);
+                        }
+                        h3{
+                            color: #2db3c6;
+                        }
+                    }
+                    
                 }
                 
             }
@@ -1019,7 +1091,7 @@ nav ul li {
     }
     
     .connect{
-        margin: 0px 70px;
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1055,20 +1127,28 @@ nav ul li {
                 padding: 0px;
                 margin: 0;
                 width: 100%;
-                .col-md-3{
+                .logo-company{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    .slide{
-                        margin: 20px;
-                        padding: 0px;
-                        
-                        &-image img{
-                          
-                            width: 194px;
-                            height: auto;
-                        }
+                    .slide-image{
+                       padding: 70%;
+                      
+                       background-size: cover;
+                       background-position: center;
+                    }
+                    .slide-image-l1{
+                        background-image: url(../img/l1.png);
+                    }
+                    .slide-image-l2{
+                        background-image: url(../img/l2.png);
+                    }
+                    .slide-image-l3{
+                        background-image: url(../img/l3.png);
+                    }
+                    .slide-image-l4{
+                        background-image: url(../img/l4.png);
                     }
                 }
                 
@@ -1392,7 +1472,7 @@ h3{
         color: rgb(177, 171, 171);
     }
     .row {
-        padding-top: 30px;
+        padding: 4%;
     }
     .col-md-2 {
         padding: 0;

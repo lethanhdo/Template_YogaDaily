@@ -7,7 +7,7 @@
     <title>Yoga Daily</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/views/student/css/style.css">
+    <link rel="stylesheet" href="../css/style-views.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -16,104 +16,71 @@
     <!-- header----------------------------------- -->
     <section>
         <div class="header">
-            <div class="wrapper">
-                <header>
-                    <nav>
-                        <div class="menu-icon">
-                            <i class="fa fa-bars fa-2x"></i>
-                        </div>
-                        <div class="col-12 logo d-flex">
-                            <a href="http://127.0.0.1:5500/index.html"><img src="/img/logo-yogadaily1.png" alt=""></a>
-                        </div>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="/views/introduction/">Giới thiệu</a></li>
-                                <li><a href="/views/class/">Lớp học</a></li>
-                                <li><a href="/views/club/">Câu lạc bộ</a></li>
-                                <!-- <li><a href="/views/time/">Lịch học</a></li> -->
-                                <li><a href="/views/blog/">Blog</a></li>
-                                <li><a href="/views/contact/">Liên hệ</a></li>
-                                <li><a href="#" type="button" class="btn btn-primary btn-slide" data-toggle="modal"
-                                        data-target="#staticBackdrop">Đăng nhập</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </header>
+            <div class="bg-menu">
+                <nav>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="col-12 logo d-flex">
+                        <a href="../../index.html"><img src="/img/logo-yogadaily1.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="/views/introduction/">Giới thiệu</a></li>
+                            <li><a href="/views/class/">Lớp học</a></li>
+                            <li><a href="/views/club/">Câu lạc bộ</a></li>
+                            <!-- <li><a href="/views/time/">Lịch học</a></li> -->
+                            <li><a href="/views/blog/">Blog</a></li>
+                            <li><a href="/views/contact/">Liên hệ</a></li>
+                            <li><a href="#" type="button" class="btn btn-primary btn-slide" data-toggle="modal"
+                                    data-target="#staticBackdrop">Đăng nhập</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
+            <!-- <div class="bg-header">
+            </div> -->
         </div>
     </section>
+
     <!-- contain----------------------------------- -->
     <section>
         <div class="contain">
-           
-            <div class="hnh-background">
-                
-            </div>
-
-            <!-- <div class="slide-students">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-            </div> -->
-
             <div class="post">
                 <div class="row">
-                    <div class="col-5 avatar">
+                    <div class="col-12 col-md-5 img">
                     </div>
-                    <div class="col-7 description">
-                        <div class="name">
-                            <h4>HỒ NGỌC HÀ</h4>
+                    <div class="col-12 col-md-7 description">
+                        <div class="tittle">
+                            <div class="name">
+                                <h4>HỒ NGỌC HÀ</h4>
+                            </div>
+                            <div class="said">
+                                <p>"Ít ai biết, để sở hữu được thân hình săn chắc và quyến rũ như vậy,
+                                     Hà đã trải qua một kì huấn luyện cam go về thể chất và đặc biệt 
+                                     là một chế độ dinh dưỡng nghiêm ngặt. Các bài tập mà Huấn luyện viên tại TT
+                                      Yoga Daily thường áp dụng cho Hà chính là lunge, gập bụng, jumping squat trên cầu thang, plank… 
+                                      Không những vậy, Hà còn tuân thủ tuyệt đối kế hoạch dinh dưỡng mà đội ngũ chuyên gia hình thể và dinh dưỡng 
+                                      của Yoga Daily đề xuất. Chỉ sau hai tháng, cơ thể của Hà đã có những thay đổi 
+                                      thật sự tích cực. Tỉ lệ mỡ toàn cơ thể của Hà rơi vào mức 18%. Đây là một con số cực kì 
+                                      lý tưởng của các mỹ nhân thế giới."</p>
+                            </div>
                         </div>
-                        <div class="said">
-                            <p>"Ít ai biết, để sở hữu được thân hình săn chắc và quyến rũ như vậy,
-                                 Hà đã trải qua một kì huấn luyện cam go về thể chất và đặc biệt 
-                                 là một chế độ dinh dưỡng nghiêm ngặt. Các bài tập mà Huấn luyện viên tại TT
-                                  Yoga Daily thường áp dụng cho Hà chính là lunge, gập bụng, jumping squat trên cầu thang, plank… 
-                                  Không những vậy, Hà còn tuân thủ tuyệt đối kế hoạch dinh dưỡng mà đội ngũ chuyên gia hình thể và dinh dưỡng 
-                                  của Yoga Daily đề xuất. Chỉ sau hai tháng, cơ thể của Hà đã có những thay đổi 
-                                  thật sự tích cực. Tỉ lệ mỡ toàn cơ thể của Hà rơi vào mức 18%. Đây là một con số cực kì 
-                                  lý tưởng của các mỹ nhân thế giới."</p>
+                        
+                        <div class="img-more row">
+                            <div class="col-6 img-more-com img-more-1"></div>
+                            <div class="col-6 img-more-com img-more-2"></div>
+                        
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                 ĐĂNG KÝ NGAY TẬP THỬ
             </button>
+
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -122,7 +89,7 @@
                         <div class="modal-header row">
                             <div class="contain col-6">
                                 <h5 class="modal-title" id="exampleModalLabel">ĐĂNG KÝ ĐỂ NHẬN NGAY</h5>
-                                <img src="/img/7days.png" alt="">
+                                <img src="img/7days.png" alt="">
                                 <p>Hãy nhanh tay đăng ký để được trải nghiệm trung tâm gần nhất và nhận tư vấn miễn phí
                                     về dịch vụ tại Yoga Daily!</p>
                                 <form action="" class="form">
@@ -142,32 +109,17 @@
                 </div>
             </div>
 
-            
-
+            <!-- students -->
             <div class="students">
                 <div class="students-tittle">
-                    <h2>KHÓA HỌC</h2>
-                </div>
-                <div class="students-tittle-small">
-                    <p>HỘI VIÊN NỔI TIẾNG</p>
-                </div>
-                <div class="students-descreption">
-                    <p>
-                        Kết nối và học tập với các ngôi sao điện ảnh, người mẫu, ca sĩ ... nổi tiếng trong
-                        giới Showbiz Việt</p>
+                    <h2>HỘI VIÊN NỔI TIẾNG</h2>
                 </div>
                 <div class="students-slides">
                     <div class="row">
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 student-box">
                             <a href="#">
-                                <div class="slide-image" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv1.jpg);
-                                    background-size: cover;">
-
+                                <div class="slide-image">
+                                <div class="slide-image-small slide-image-1"></div>
                                 </div>
                                 <div class="slide-description">
                                     <h3>PHẠM HƯƠNG</h3>
@@ -177,15 +129,10 @@
 
 
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 student-box">
                             <a href="#">
-                                <div class="slide-image" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv2.jpg);
-                                    background-size: cover;">
+                                <div class="slide-image">
+                                    <div class="slide-image-small slide-image-2"></div>
                                 </div>
                                 <div class="slide-description">
                                     <h3>PHƯƠNG MAI</h3>
@@ -194,15 +141,10 @@
                             </a>
 
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 student-box">
                             <a href="#">
-                                <div class="slide-image image-3" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv3.jpg);
-                                    background-size: cover;">
+                                <div class="slide-image">
+                                    <div class="slide-image-small slide-image-3"></div>
                                     <!-- <img src="img/tv3.jpg" alt=""> -->
                                 </div>
                                 <div class="slide-description">
@@ -212,15 +154,10 @@
                             </a>
 
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 student-box">
                             <a href="#">
-                                <div class="slide-image" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv4.jpg);
-                                    background-size: cover;">
+                                <div class="slide-image">
+                                    <div class="slide-image-small slide-image-4"></div>
                                 </div>
                                 <div class="slide-description">
                                     <h3>DIỄM MY</h3>
@@ -229,18 +166,10 @@
                             </a>
 
                         </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 student-box">
                             <a href="#">
-                                <div class="slide-image" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv5.jpg);
-                                    background-size: cover;">
+                                <div class="slide-image">
+                                    <div class="slide-image-small slide-image-5"></div>
                                 </div>
                                 <div class="slide-description">
                                     <h3>HƯƠNG GIANG</h3>
@@ -249,15 +178,10 @@
                             </a>
 
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 student-box">
                             <a href="#">
-                                <div class="slide-image" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv6.jpg);
-                                    background-size: cover;">
+                                <div class="slide-image">
+                                    <div class="slide-image-small slide-image-6"></div>
                                 </div>
                                 <div class="slide-description">
                                     <h3>HỒ VĨNH KHOA</h3>
@@ -266,15 +190,10 @@
                             </a>
 
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 student-box">
                             <a href="#">
-                                <div class="slide-image" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv7.jpg);
-                                    background-size: cover;">
+                                <div class="slide-image">
+                                    <div class="slide-image-small slide-image-7"></div>
                                 </div>
                                 <div class="slide-description">
                                     <h3>CHIPU</h3>
@@ -283,15 +202,10 @@
                             </a>
 
                         </div>
-                        <div class="col-12 col-md-3">
-                            <a href="#">
-                                <div class="slide-image" style="
-                                    border-radius: 50%;
-                                    box-shadow: 2px 2px 2px solid;
-                                    width: 194px;
-                                    height: 194px;
-                                    background-image: url(/img/tv8.jpg);
-                                    background-size: cover;">
+                        <div class="col-6 col-md-3 student-box">
+                            <a href="views/student/hongocha.html">
+                                <div class="slide-image">
+                                    <div class="slide-image-small slide-image-8"></div>
                                 </div>
                                 <div class="slide-description">
                                     <h3>HỒ NGỌC HÀ</h3>
@@ -304,171 +218,17 @@
                     </div>
                 </div>
             </div>
-
-            
-            <div class="connect">
-                <div class="connect-tittle">
-                    <h2>ĐỐI TÁC HÀNG ĐẦU</h2>
-                </div>
-                <div class="connect-tittle-small">
-                    <p>LIÊN KẾT</p>
-                </div>
-                <div class="connect-descreption">
-                    <p>
-                        Kết nối với những đối tác hàng đầu về liệu pháp yoga, giải phẫu, thiền định, v.v.
-                        Trang web yoga đa dạng nhất thế giới</p>
-                </div>
-                <div class="connect-slides">
-                    <div class="row">
-                        <div class="col-12 col-md-3">
-                            <div class="slide-image">
-                                <img src="/img/l1.png" alt="">
-                            </div>
-                            <div class="slide-descreption">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="slide-image">
-                                <img src="/img/l2.png" alt="">
-                            </div>
-                            <div class="slide-descreption">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="slide-image">
-                                <img src="/img/l3.png" alt="">
-                            </div>
-                            <div class="slide-descreption">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="slide-image">
-                                <img src="/img/l4.png" alt="">
-                            </div>
-                            <div class="slide-descreption">
-                                <p></p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-to-top"></i></button>
-
-            <div class="wrap-contact">
-                <div class="wrap-contact-row" onclick="openContact1()">
-                    <div title=" Liên hệ ngay" style="background-color: rgb(233, 218, 18);" id="open-contact"
-                        class="wrap-contact-row__icon"><i class="fas fa-envelope-open-text"></i></div>
-                    <div id="changeText1" class="wrap-contact-row__text">
-                        <form action="" style="margin: 5px; width: 100%;">
-                            <p style="background-color: #fff;"><small style="color: gray;">Đóng góp ý kiến tại
-                                    đây</small></p>
-
-                            <div class="form-group">
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="email" placeholder="Email của bạn"
-                                        name="email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" rows="5" id="comment"
-                                        placeholder="Nhập nội dung"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" class="btn btn-default"
-                                        style="background-color:rgb(233, 218, 18)">Gửi</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="wrap-contact-row" onclick="openContact2()">
-                    <div title=" Liên hệ ngay" style="background-color: rgb(22, 152, 212);" id="open-contact"
-                        class="wrap-contact-row__icon"><i class="fab fa-facebook-messenger"></i></div>
-                    <div id="changeText2" class="wrap-contact-row__text">
-                        <form action="" style="margin: 5px; width: 100%;">
-                            <div class="form-group">
-                                <p style="background-color: #fff;"><small style="color: gray;">Yoga Daily・Thường phản
-                                        hồi trong vòng một giờ</small></p>
-                                <div class="col-sm-10 d-flex">
-                                    <div class="avatar"></div>
-
-                                    <p style="color: #000;">Xin chào! Chúng tôi luôn sẵn sàng trả lời mọi câu hỏi của
-                                        bạn.</p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-10">
-
-                                    <p class="signin"><i class="fab fa-facebook-messenger"></i>Đăng nhập vào Messenger
-                                    </p>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-
-                <div class="wrap-contact-row" onclick="openContact3()">
-                    <div title=" Liên hệ ngay" style="background-color: red;" id="open-contact"
-                        class="wrap-contact-row__icon"><i class="fas fa-phone"></i></div>
-                    <div id="changeText3" class="wrap-contact-row__text" style="color: #000;">+84 : 98473263</div>
-                </div>
-
-            </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                ĐĂNG KÝ NGAY TẬP THỬ
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header row">
-                            <div class="contain col-6">
-                                <h5 class="modal-title" id="exampleModalLabel">ĐĂNG KÝ ĐỂ NHẬN NGAY</h5>
-                                <img src="/img/7days.png" alt="">
-                                <p>Hãy nhanh tay đăng ký để được trải nghiệm trung tâm gần nhất và nhận tư vấn miễn phí
-                                    về dịch vụ tại Yoga Daily!</p>
-                                <form action="" class="form">
-                                    <input type="text" placeholder="Họ và Tên">
-                                    <input type="text" placeholder="Số điện thoại">
-                                    <input type="text" placeholder="Địa chỉ">
-                                    <button class="btn">ĐĂNG KÝ NGAY</button>
-                                </form>
-                            </div>
-
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        </div>  
     </section>
-    <!-- footer----------------------------------- -->
 
+    <!-- footer----------------------------------- -->
     <section>
         <div class="footer">
             <div class="row d-flex">
                 <div class="col-12 col-md-2">
-                    <img src="/img/logo-yogadaily1.png" style="width: 100%;" alt="">
+                    <img src="../img/logo-yogadaily1.png" style="width: 100%;" alt="">
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-4 col-md-2">
                     <div>
                         <h2>LIÊN KẾT</h2>
                     </div>
@@ -481,7 +241,7 @@
                     </div>
 
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-4 col-md-2">
                     <div>
                         <h2>DỊCH VỤ</h2>
                     </div>
@@ -493,7 +253,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-4 col-md-2">
                     <div>
                         <h2>ĐỊA CHỈ</h2>
                     </div>
@@ -505,7 +265,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-2">
                     <div>
                         <h2>HOTLINE</h2>
                     </div>
@@ -517,7 +277,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-2">
                     <div>
                         <div>
                             <h2>LIÊN HỆ</h2>
@@ -564,7 +324,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

@@ -14,35 +14,40 @@ body {
   font-weight: lighter;
 }
 
-header {
+.header {
   width: 100%;
-  background: url(/img/background.jpg) no-repeat 50% 50%;
-  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header .logo {
+.header .logo {
   line-height: 60px;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 14px 46px;
+  margin: 0 46px;
   width: 180px;
 }
 
-header .logo img {
+.header .logo img {
   width: 100%;
   border-radius: 50%;
 }
 
-header nav {
+.header nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
   z-index: 999;
 }
 
-header nav ul {
+.header nav ul {
   line-height: 60px;
   list-style: none;
   background: rgba(117, 113, 113, 0);
@@ -56,23 +61,23 @@ header nav ul {
   transition: 1s;
 }
 
-header nav.black ul {
+.header nav.black ul {
   background: #000;
 }
 
-header nav ul li {
+.header nav ul li {
   display: inline-block;
-  padding: 0 40px;
+  padding: 0px 40px;
 }
 
-header nav ul li a {
+.header nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
   text-shadow: 2px 2px 2px #000;
 }
 
-header .menu-icon {
+.header .menu-icon {
   line-height: 60px;
   width: 100%;
   background: #000;
@@ -85,15 +90,30 @@ header .menu-icon {
   display: none;
 }
 
-header a:hover {
+.header a:hover {
   text-decoration: none;
   color: #fff;
 }
 
+.header .btn-signup {
+  font-size: 14px;
+  border: none;
+}
+
+.header .bg-menu {
+  width: 100%;
+  height: 65px;
+  background: black;
+}
+
+.header .bg-header {
+  width: 100%;
+  height: 100%;
+  background: url(../img/hnh2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
 @media (max-width: 786px) {
-  header {
-    height: 50vh !important;
-  }
   .logo {
     position: fixed;
     top: 0;
@@ -133,10 +153,15 @@ header a:hover {
   .empowerment {
     height: 400px !important;
   }
+  .wrap-contact-row__icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 @media (max-width: 1222px) {
   .menu-icon {
+    line-height: 0px !important;
     display: block !important;
   }
   .logo {
@@ -659,6 +684,11 @@ header a:hover {
   color: inherit;
 }
 
+.contain .practice-slides .row {
+  width: 100%;
+  margin: 0;
+}
+
 .contain .practice-slides .row .col-md-4 .slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1039,7 +1069,7 @@ header a:hover {
 .contain .challege {
   width: 100%;
   height: 400px;
-  background-image: url(/img/tt.jpg);
+  background-image: url(../img/tt.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -1141,6 +1171,18 @@ header a:hover {
 
 .contain .course-slides .row {
   width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.contain .course-slides .row .overlay {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.05;
 }
 
 .contain .course-slides .row .col-md-3 {
@@ -1152,28 +1194,28 @@ header a:hover {
 
 .contain .course-slides .row .col-md-3 .image-1 {
   height: 250px;
-  background-image: url(/img/tc1.jpg);
+  background-image: url(../img/tc1.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .contain .course-slides .row .col-md-3 .image-2 {
   height: 250px;
-  background-image: url(/img/tc2.jpg);
+  background-image: url(../img/tc2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .contain .course-slides .row .col-md-3 .image-3 {
   height: 250px;
-  background-image: url(/img/tc3.jpg);
+  background-image: url(../img/tc3.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .contain .course-slides .row .col-md-3 .image-4 {
   height: 250px;
-  background-image: url(/img/tc4.jpg);
+  background-image: url(../img/tc4.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1210,9 +1252,13 @@ header a:hover {
   font-size: 14px;
 }
 
+.contain .course-slides .row :hover .overlay {
+  opacity: 0;
+}
+
 .contain .demond {
   margin: 80px 0;
-  background-image: url(/img/home2.jpg);
+  background-image: url(../img/home2.jpg);
   -webkit-box-shadow: inset 0 0 0 2000px rgba(141, 135, 139, 0.3);
           box-shadow: inset 0 0 0 2000px rgba(141, 135, 139, 0.3);
   background-size: cover;
@@ -1342,7 +1388,7 @@ header a:hover {
   width: 100%;
 }
 
-.contain .students-slides .row .col-md-3 {
+.contain .students-slides .row .student-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1358,42 +1404,109 @@ header a:hover {
           align-items: center;
 }
 
-.contain .students-slides .row .col-md-3 .slide {
+.contain .students-slides .row .student-box a {
+  width: 100%;
+}
+
+.contain .students-slides .row .student-box a .slide {
   margin: 20px;
   padding: 0px;
 }
 
-.contain .students-slides .row .col-md-3 .slide-image img {
-  border: 1px solid #565758;
+.contain .students-slides .row .student-box a .slide-image {
   border-radius: 50%;
-  width: 194px;
-  height: 194;
+  -webkit-box-shadow: 2px 2px 2px solid;
+          box-shadow: 2px 2px 2px solid;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.contain .students-slides .row .col-md-3 .slide-image img .image-3 {
-  background-image: url(/img/tv3.jpg);
+.contain .students-slides .row .student-box a .slide-image-small {
+  padding: 50%;
+}
+
+.contain .students-slides .row .student-box a .slide-image-1 {
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-image: url(../img/tv1.jpg);
 }
 
-.contain .students-slides .row .col-md-3 .slide :hover {
-  border: 5px solid red;
+.contain .students-slides .row .student-box a .slide-image-2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv2.jpg);
 }
 
-.contain .students-slides .row .col-md-3 .slide-description h2 {
-  font-size: 25px;
+.contain .students-slides .row .student-box a .slide-image-3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv3.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-4 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv4.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-5 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv5.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-6 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv6.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-7 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv7.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-8 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv8.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-description h3 {
+  margin-top: 1%;
+  font-size: 15px;
   padding-top: 8px;
 }
 
-.contain .students-slides .row .col-md-3 .slide-description p {
+.contain .students-slides .row .student-box a .slide-description p {
   text-align: center;
   color: #ad9898;
+}
+
+.contain .students-slides .row .student-box a:hover .slide-image-small {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contain .students-slides .row .student-box a:hover h3 {
+  color: #2db3c6;
 }
 
 .contain .empowerment {
   margin: 80px 0;
   width: 100%;
   height: 500px;
-  background-image: url(/img/nh.jpg);
+  background-image: url(../img/nh.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1441,7 +1554,7 @@ header a:hover {
 }
 
 .contain .connect {
-  margin: 0px 70px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1515,7 +1628,7 @@ header a:hover {
   width: 100%;
 }
 
-.contain .connect-slides .row .col-md-3 {
+.contain .connect-slides .row .logo-company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1531,14 +1644,26 @@ header a:hover {
           align-items: center;
 }
 
-.contain .connect-slides .row .col-md-3 .slide {
-  margin: 20px;
-  padding: 0px;
+.contain .connect-slides .row .logo-company .slide-image {
+  padding: 70%;
+  background-size: cover;
+  background-position: center;
 }
 
-.contain .connect-slides .row .col-md-3 .slide-image img {
-  width: 194px;
-  height: auto;
+.contain .connect-slides .row .logo-company .slide-image-l1 {
+  background-image: url(../img/l1.png);
+}
+
+.contain .connect-slides .row .logo-company .slide-image-l2 {
+  background-image: url(../img/l2.png);
+}
+
+.contain .connect-slides .row .logo-company .slide-image-l3 {
+  background-image: url(../img/l3.png);
+}
+
+.contain .connect-slides .row .logo-company .slide-image-l4 {
+  background-image: url(../img/l4.png);
 }
 
 .contain #myBtn {
@@ -1678,7 +1803,7 @@ header a:hover {
   height: 40px;
   background: #000;
   border-radius: 50%;
-  background-image: url(/img/logo-yogadaily1.png);
+  background-image: url(../img/logo-yogadaily1.png);
   background-size: cover;
 }
 
@@ -1705,7 +1830,7 @@ header a:hover {
 
 .contain .modal-header {
   height: 580px;
-  background-image: url(/img/bg7.jpg);
+  background-image: url(../img/bg7.jpg);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1742,11 +1867,62 @@ header a:hover {
   color: #fff;
 }
 
+.contain .post {
+  margin: 3% auto;
+}
+
+.contain .post .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contain .post .img {
+  padding: 26% 0;
+  background-image: url(../img/tv8.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.contain .post .description {
+  padding: 0;
+}
+
+.contain .post .description .tittle {
+  background: #ececec;
+}
+
+.contain .post .description .tittle .name h4 {
+  padding: 1%;
+  margin: 0;
+}
+
+.contain .post .description .tittle .said p {
+  padding: 1%;
+  margin: 0;
+}
+
+.contain .post .description .img-more-com {
+  background-size: cover;
+  background-position: center;
+  padding: 29% 20%;
+}
+
+.contain .post .description .img-more-1 {
+  background-image: url(../img/hnh.jpg);
+}
+
+.contain .post .description .img-more-2 {
+  background-image: url(../img/hnh3.jpg);
+}
+
 .contain .btn-slide {
   margin: 30px;
   border: none;
   border-radius: 3px;
-  background: #a7b1b3 !important;
+  background: #eceeee !important;
   padding: 30px;
   font-weight: bold;
 }
@@ -1905,7 +2081,7 @@ h3 {
 }
 
 .footer {
-  padding: 25px;
+  padding: 0;
   background: #333;
   width: 100%;
   color: #fff;
@@ -1917,11 +2093,11 @@ h3 {
 }
 
 .footer .row {
-  padding-top: 30px;
+  padding: 4%;
 }
 
 .footer .col-md-2 {
-  padding: 30px 0;
+  padding: 0;
 }
 
 .footer .col-md-2 .social .icon {
@@ -1963,61 +2139,31 @@ h3 {
   padding: 0px;
 }
 
-.hnh-background {
+.btnOnTop {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col-sm-10 {
+  max-width: 100%;
+}
+
+.btn-default {
   width: 100%;
-  height: 540px;
-  background-image: url(/views/img/hnh2.jpg);
-  background-size: cover;
 }
 
-.post .row {
-  width: 100%;
-  height: 570px;
+.carousel-control-prev {
+  left: -70px;
 }
 
-.post .row .avatar {
-  width: 100%;
-  height: 100%;
-  background-image: url(/views/img/hnh3.jpg);
-  background-size: cover;
-  background-position: center;
+.carousel-control-next {
+  right: -70px;
 }
-
-.post .row .description {
-  margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.post .row .description .said {
-  margin: 0;
-  text-align: left;
-  padding: 0 20px;
-  border-left: #c9c7c7 1px solid;
-}
-
-.post .row .description .said p {
-  margin: 0;
-}
-
-.slide-students .row {
-  margin: 0;
-  width: 80%;
-  height: 194px;
-}
-
-.slide-students .row .col-3 {
-  border-radius: 50%;
-  background-image: url(/views/img/tv1.jpg);
-  background-size: cover;
-  border: 1px solid #565758;
-  background-position: center;
-  width: 194px;
-  height: 194px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-views.css.map */
