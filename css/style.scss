@@ -16,7 +16,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: url(/img/background.jpg) no-repeat 50% 50%;
+    background: url(../img/background.jpg) no-repeat 50% 50%;
     background-size: cover;
     .logo {
         line-height: 60px;
@@ -731,7 +731,7 @@ nav ul li {
     .challege{
         width: 100%;
         height: 400px;
-        background-image: url(/img/tt.jpg);
+        background-image: url(../img/tt.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         color: #fff;
@@ -816,25 +816,25 @@ nav ul li {
                     box-shadow: 2px 2px 2px rgb(126, 132, 140);
                     .image-1{
                         height: 250px;
-                        background-image: url(/img/tc1.jpg);
+                        background-image: url(../img/tc1.jpg);
                         background-size: cover;
                         background-position: center;
                     }
                     .image-2{
                         height: 250px;
-                        background-image: url(/img/tc2.jpg);
+                        background-image: url(../img/tc2.jpg);
                         background-size: cover;
                         background-position: center;
                     }
                     .image-3{
                         height: 250px;
-                        background-image: url(/img/tc3.jpg);
+                        background-image: url(../img/tc3.jpg);
                         background-size: cover;
                         background-position: center;
                     }
                     .image-4{
                         height: 250px;
-                        background-image: url(/img/tc4.jpg);
+                        background-image: url(../img/tc4.jpg);
                         background-size: cover;
                         background-position: center;
                     }
@@ -870,7 +870,7 @@ nav ul li {
     
     .demond{
         margin: 80px 0;
-        background-image: url(/img/home2.jpg);
+        background-image: url(../img/home2.jpg);
         box-shadow:inset 0 0 0 2000px rgba(141, 135, 139, 0.3);
         background-size: cover;
         background-repeat: no-repeat;
@@ -961,7 +961,7 @@ nav ul li {
                             width: 194px;
                             height: 194;
                             .image-3{
-                                background-image: url(/img/tv3.jpg);
+                                background-image: url(../img/tv3.jpg);
                                 background-size: cover;
                             }
                         }:hover{
@@ -988,7 +988,7 @@ nav ul li {
         margin: 80px 0;
         width: 100%;
         height: 500px;
-        background-image: url(/img/nh.jpg);
+        background-image: url(../img/nh.jpg);
         background-size: cover;
         background-position: center;
         color: #fff;
@@ -1201,7 +1201,7 @@ nav ul li {
           height: 40px;
           background: #000;
           border-radius: 50%;
-          background-image: url(/img/logo-yogadaily1.png);
+          background-image: url(../img/logo-yogadaily1.png);
           background-size: cover;
       }
       
@@ -1226,7 +1226,7 @@ nav ul li {
       }
       .modal-header{
           height: 580px;
-          background-image: url(/img/bg7.jpg);
+          background-image: url(../img/bg7.jpg);
           flex-direction: column;
           .contain{
               display: flex;

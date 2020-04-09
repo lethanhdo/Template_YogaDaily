@@ -17,7 +17,7 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  background: url(/img/background.jpg) no-repeat 50% 50%;
+  background: url(../img/background.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -1051,7 +1051,7 @@ header .btn-signup {
 .contain .challege {
   width: 100%;
   height: 400px;
-  background-image: url(/img/tt.jpg);
+  background-image: url(../img/tt.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -1176,28 +1176,28 @@ header .btn-signup {
 
 .contain .course-slides .row .col-md-3 .image-1 {
   height: 250px;
-  background-image: url(/img/tc1.jpg);
+  background-image: url(../img/tc1.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .contain .course-slides .row .col-md-3 .image-2 {
   height: 250px;
-  background-image: url(/img/tc2.jpg);
+  background-image: url(../img/tc2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .contain .course-slides .row .col-md-3 .image-3 {
   height: 250px;
-  background-image: url(/img/tc3.jpg);
+  background-image: url(../img/tc3.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .contain .course-slides .row .col-md-3 .image-4 {
   height: 250px;
-  background-image: url(/img/tc4.jpg);
+  background-image: url(../img/tc4.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1240,7 +1240,7 @@ header .btn-signup {
 
 .contain .demond {
   margin: 80px 0;
-  background-image: url(/img/home2.jpg);
+  background-image: url(../img/home2.jpg);
   -webkit-box-shadow: inset 0 0 0 2000px rgba(141, 135, 139, 0.3);
           box-shadow: inset 0 0 0 2000px rgba(141, 135, 139, 0.3);
   background-size: cover;
@@ -1399,7 +1399,7 @@ header .btn-signup {
 }
 
 .contain .students-slides .row .col-md-3 .slide-image img .image-3 {
-  background-image: url(/img/tv3.jpg);
+  background-image: url(../img/tv3.jpg);
   background-size: cover;
 }
 
@@ -1421,7 +1421,7 @@ header .btn-signup {
   margin: 80px 0;
   width: 100%;
   height: 500px;
-  background-image: url(/img/nh.jpg);
+  background-image: url(../img/nh.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1706,7 +1706,7 @@ header .btn-signup {
   height: 40px;
   background: #000;
   border-radius: 50%;
-  background-image: url(/img/logo-yogadaily1.png);
+  background-image: url(../img/logo-yogadaily1.png);
   background-size: cover;
 }
 
@@ -1733,7 +1733,7 @@ header .btn-signup {
 
 .contain .modal-header {
   height: 580px;
-  background-image: url(/img/bg7.jpg);
+  background-image: url(../img/bg7.jpg);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
