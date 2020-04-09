@@ -93,7 +93,6 @@ header a:hover {
 
 header .btn-signup {
   font-size: 14px;
-  background: none !important;
   border: none;
 }
 
@@ -140,10 +139,15 @@ header .btn-signup {
   .empowerment {
     height: 400px !important;
   }
+  .wrap-contact-row__icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 @media (max-width: 1222px) {
   .menu-icon {
+    line-height: 0px !important;
     display: block !important;
   }
   .logo {
@@ -1370,7 +1374,7 @@ header .btn-signup {
   width: 100%;
 }
 
-.contain .students-slides .row .col-md-3 {
+.contain .students-slides .row .student-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1386,35 +1390,102 @@ header .btn-signup {
           align-items: center;
 }
 
-.contain .students-slides .row .col-md-3 .slide {
+.contain .students-slides .row .student-box a {
+  width: 100%;
+}
+
+.contain .students-slides .row .student-box a .slide {
   margin: 20px;
   padding: 0px;
 }
 
-.contain .students-slides .row .col-md-3 .slide-image img {
-  border: 1px solid #565758;
+.contain .students-slides .row .student-box a .slide-image {
   border-radius: 50%;
-  width: 194px;
-  height: 194;
+  -webkit-box-shadow: 2px 2px 2px solid;
+          box-shadow: 2px 2px 2px solid;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.contain .students-slides .row .col-md-3 .slide-image img .image-3 {
-  background-image: url(../img/tv3.jpg);
+.contain .students-slides .row .student-box a .slide-image-small {
+  padding: 50%;
+}
+
+.contain .students-slides .row .student-box a .slide-image-1 {
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-image: url(../img/tv1.jpg);
 }
 
-.contain .students-slides .row .col-md-3 .slide :hover {
-  border: 5px solid red;
+.contain .students-slides .row .student-box a .slide-image-2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv2.jpg);
 }
 
-.contain .students-slides .row .col-md-3 .slide-description h2 {
-  font-size: 25px;
+.contain .students-slides .row .student-box a .slide-image-3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv3.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-4 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv4.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-5 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv5.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-6 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv6.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-7 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv7.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-image-8 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../img/tv8.jpg);
+}
+
+.contain .students-slides .row .student-box a .slide-description h3 {
+  margin-top: 1%;
+  font-size: 15px;
   padding-top: 8px;
 }
 
-.contain .students-slides .row .col-md-3 .slide-description p {
+.contain .students-slides .row .student-box a .slide-description p {
   text-align: center;
   color: #ad9898;
+}
+
+.contain .students-slides .row .student-box a:hover .slide-image-small {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contain .students-slides .row .student-box a:hover h3 {
+  color: #2db3c6;
 }
 
 .contain .empowerment {
@@ -1469,7 +1540,7 @@ header .btn-signup {
 }
 
 .contain .connect {
-  margin: 0px 70px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1543,7 +1614,7 @@ header .btn-signup {
   width: 100%;
 }
 
-.contain .connect-slides .row .col-md-3 {
+.contain .connect-slides .row .logo-company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1559,14 +1630,26 @@ header .btn-signup {
           align-items: center;
 }
 
-.contain .connect-slides .row .col-md-3 .slide {
-  margin: 20px;
-  padding: 0px;
+.contain .connect-slides .row .logo-company .slide-image {
+  padding: 70%;
+  background-size: cover;
+  background-position: center;
 }
 
-.contain .connect-slides .row .col-md-3 .slide-image img {
-  width: 194px;
-  height: auto;
+.contain .connect-slides .row .logo-company .slide-image-l1 {
+  background-image: url(../img/l1.png);
+}
+
+.contain .connect-slides .row .logo-company .slide-image-l2 {
+  background-image: url(../img/l2.png);
+}
+
+.contain .connect-slides .row .logo-company .slide-image-l3 {
+  background-image: url(../img/l3.png);
+}
+
+.contain .connect-slides .row .logo-company .slide-image-l4 {
+  background-image: url(../img/l4.png);
 }
 
 .contain #myBtn {
@@ -1945,7 +2028,7 @@ h3 {
 }
 
 .footer .row {
-  padding-top: 30px;
+  padding: 4%;
 }
 
 .footer .col-md-2 {
