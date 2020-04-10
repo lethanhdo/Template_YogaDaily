@@ -150,6 +150,7 @@ header {
         .col-hidden{
             display: none!important;
         }
+        width: 101%!important;
     }
     .calo{
         padding: 0 2%;
@@ -968,7 +969,7 @@ nav ul li {
             color: black;
         }
         &-slides{
-            width: 100%;
+            width: 75%;
             margin: 0 ;
             display: flex;
             flex-direction: column;

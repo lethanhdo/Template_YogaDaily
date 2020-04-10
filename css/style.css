@@ -146,6 +146,9 @@ header .btn-signup {
   .practice-slides {
     display: none !important;
   }
+  .students-slides {
+    width: 101% !important;
+  }
   .students-slides .col-hidden {
     display: none !important;
   }
@@ -1371,7 +1374,7 @@ header .btn-signup {
 }
 
 .contain .students-slides {
-  width: 100%;
+  width: 75%;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
