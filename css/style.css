@@ -1814,6 +1814,10 @@ header .btn-signup {
   font-weight: bold;
 }
 
+.contain .btn:hover {
+  background: #0c8696 !important;
+}
+
 .contain .modal-header {
   height: 580px;
   background-image: url(../img/bg7.jpg);

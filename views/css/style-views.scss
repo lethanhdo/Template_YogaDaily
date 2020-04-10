@@ -103,9 +103,7 @@ body {
 
 
 @media(max-width: 786px) {
-    .header{
-        //height: 50vh!important;
-    }
+    
     .logo {
           position: fixed;
           top: 0;
@@ -1308,12 +1306,14 @@ nav ul li {
           margin: 0px;
       }
       .btn-primary{
-        margin: 30px;
+        margin:30px;
         border: none;
         border-radius: 3px;
         background: #2db3c6!important;
         font-weight: bold;
-        
+      }
+      .btn:hover{
+        background: #0c8696!important;
       }
       .modal-header{
           height: 580px;
