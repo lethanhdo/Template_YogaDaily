@@ -27,7 +27,7 @@ $(window).on("scroll", function() {
 
     function offHover1()
     {
-        $("#news1").attr('src', 'img/cl11.jpg');
+        $("#news1").attr('src', 'img/cl11.JPG');
     }
      //class 2
      function onHover2()
@@ -37,7 +37,7 @@ $(window).on("scroll", function() {
  
      function offHover2()
      {
-         $("#news2").attr('src', 'img/cl22.jpg');
+         $("#news2").attr('src', 'img/cl22.JPG');
      }
       //class 3
     function onHover3()
@@ -47,7 +47,7 @@ $(window).on("scroll", function() {
 
     function offHover3()
     {
-        $("#news3").attr('src', 'img/cl33.jpg');
+        $("#news3").attr('src', 'img/cl33.JPG');
     }
      //class4
      function onHover4()
@@ -57,7 +57,7 @@ $(window).on("scroll", function() {
  
      function offHover4()
      {
-         $("#news4").attr('src', 'img/cl44.jpg');
+         $("#news4").attr('src', 'img/cl44.JPG');
      }
       //class 5
     function onHover5()
@@ -67,7 +67,7 @@ $(window).on("scroll", function() {
 
     function offHover5()
     {
-        $("#news5").attr('src', 'img/cl55.jpg');
+        $("#news5").attr('src', 'img/cl55.JPG');
     }
      //class 6
      function onHover6()
@@ -77,7 +77,7 @@ $(window).on("scroll", function() {
  
      function offHover6()
      {
-         $("#news6").attr('src', 'img/cl66.jpg');
+         $("#news6").attr('src', 'img/cl66.JPG');
      }
 
 
