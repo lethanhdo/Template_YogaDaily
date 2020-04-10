@@ -22,62 +22,62 @@ $(window).on("scroll", function() {
       //class 1
     function onHover1()
     {
-        $("#news1").attr('src', '../img/cl1.jpg');
+        $("#news1").attr('src', 'img/cl1.jpg');
     }
 
     function offHover1()
     {
-        $("#news1").attr('src', '../img/cl11.jpg');
+        $("#news1").attr('src', 'img/cl11.jpg');
     }
      //class 2
      function onHover2()
      {
-         $("#news2").attr('src', '../img/cl2.jpg');
+         $("#news2").attr('src', 'img/cl2.jpg');
      }
  
      function offHover2()
      {
-         $("#news2").attr('src', '../img/cl22.jpg');
+         $("#news2").attr('src', 'img/cl22.jpg');
      }
       //class 3
     function onHover3()
     {
-        $("#news3").attr('src', '../img/cl3.jpg');
+        $("#news3").attr('src', 'img/cl3.jpg');
     }
 
     function offHover3()
     {
-        $("#news3").attr('src', '../img/cl33.jpg');
+        $("#news3").attr('src', 'img/cl33.jpg');
     }
      //class4
      function onHover4()
      {
-         $("#news4").attr('src', '../img/cl4.jpg');
+         $("#news4").attr('src', 'img/cl4.jpg');
      }
  
      function offHover4()
      {
-         $("#news4").attr('src', '../img/cl44.jpg');
+         $("#news4").attr('src', 'img/cl44.jpg');
      }
       //class 5
     function onHover5()
     {
-        $("#news5").attr('src', '../img/cl5.jpg');
+        $("#news5").attr('src', 'img/cl5.jpg');
     }
 
     function offHover5()
     {
-        $("#news5").attr('src', '../img/cl55.jpg');
+        $("#news5").attr('src', 'img/cl55.jpg');
     }
      //class 6
      function onHover6()
      {
-         $("#news6").attr('src', '../img/cl6.jpg');
+         $("#news6").attr('src', 'img/cl6.jpg');
      }
  
      function offHover6()
      {
-         $("#news6").attr('src', '../img/cl66.jpg');
+         $("#news6").attr('src', 'img/cl66.jpg');
      }
 
 

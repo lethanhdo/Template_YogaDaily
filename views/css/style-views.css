@@ -157,6 +157,12 @@ body {
     width: 40px !important;
     height: 40px !important;
   }
+  .students {
+    margin: auto 4% !important;
+  }
+  .students-slides .col-hidden {
+    display: none !important;
+  }
 }
 
 @media (max-width: 1222px) {
@@ -198,7 +204,7 @@ body {
 .contain {
   text-align: center;
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1310,7 +1316,7 @@ body {
 }
 
 .contain .students {
-  margin: 30px 70px;
+  margin: auto 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1872,7 +1878,7 @@ body {
 }
 
 .contain .post {
-  margin: 3% auto;
+  margin: auto;
 }
 
 .contain .post .row {
@@ -1884,7 +1890,7 @@ body {
 }
 
 .contain .post .img {
-  padding: 26% 0;
+  padding: 23.8% 0;
   background-image: url(../img/tv8.jpg);
   background-size: cover;
   height: 100%;
