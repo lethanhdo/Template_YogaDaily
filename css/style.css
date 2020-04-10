@@ -143,6 +143,31 @@ header .btn-signup {
     width: 40px !important;
     height: 40px !important;
   }
+  .practice-slides {
+    display: none !important;
+  }
+  .students-slides .col-hidden {
+    display: none !important;
+  }
+  .calo {
+    padding: 0 2%;
+    margin: 0 -13% !important;
+  }
+  .benefits .components {
+    padding: 0 2%;
+    margin: 0 -13% !important;
+  }
+  .class-slides {
+    width: auto !important;
+    margin: 0 -13% !important;
+  }
+  .testimonials {
+    margin: 20% -13% !important;
+  }
+  .empowerment {
+    margin: 20% -13% !important;
+    width: auto !important;
+  }
 }
 
 @media (max-width: 1222px) {
@@ -301,7 +326,6 @@ header .btn-signup {
 }
 
 .contain .class-descreption {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,7 +333,7 @@ header .btn-signup {
       -ms-flex-pack: center;
           justify-content: center;
   color: #7e848c;
-  margin-top: 15px;
+  margin: 0 auto;
 }
 
 .contain .class-slides {
@@ -418,7 +442,6 @@ header .btn-signup {
 }
 
 .contain .reasons-descreption {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +449,7 @@ header .btn-signup {
       -ms-flex-pack: center;
           justify-content: center;
   color: #7e848c;
-  margin-top: 15px;
+  margin: auto;
 }
 
 .contain .reasons-slides {
@@ -508,7 +531,7 @@ header .btn-signup {
 }
 
 .contain .benefits .components {
-  margin: 0px 100px;
+  margin: 0px auto;
   background: #fbf7c7;
 }
 
@@ -549,7 +572,7 @@ header .btn-signup {
 }
 
 .contain .house {
-  margin: 70px 0px;
+  margin: 8% -13%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,7 +612,6 @@ header .btn-signup {
 }
 
 .contain .house-descreption {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,7 +619,7 @@ header .btn-signup {
       -ms-flex-pack: center;
           justify-content: center;
   color: #7e848c;
-  margin-top: 15px;
+  margin: 0 10%;
 }
 
 .contain .house-slides {
@@ -650,7 +672,6 @@ header .btn-signup {
 }
 
 .contain .practice-descreption {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,7 +679,7 @@ header .btn-signup {
       -ms-flex-pack: center;
           justify-content: center;
   color: #7e848c;
-  margin-top: 15px;
+  margin: auto;
 }
 
 .contain .practice-slides {
@@ -836,7 +857,7 @@ header .btn-signup {
 }
 
 .contain .testimonials .slides .row {
-  padding: 30px 0;
+  padding: 30px 10%;
 }
 
 .contain .testimonials .slides .row .col-4 {
@@ -1140,7 +1161,6 @@ header .btn-signup {
 }
 
 .contain .course-descreption {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1148,7 +1168,7 @@ header .btn-signup {
       -ms-flex-pack: center;
           justify-content: center;
   color: #7e848c;
-  margin-top: 15px;
+  margin: auto;
 }
 
 .contain .course-slides {
@@ -1296,7 +1316,7 @@ header .btn-signup {
 }
 
 .contain .students {
-  margin: 30px 70px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1655,9 +1675,9 @@ header .btn-signup {
 .contain #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 2%;
   height: 42px;
-  right: 50px;
+  right: 2%;
   z-index: 99;
   font-size: 14px;
   border: none;
@@ -1731,8 +1751,8 @@ header .btn-signup {
   margin: 0 10px;
   position: relative;
   z-index: 9999;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .contain .wrap-contact .wrap-contact-row__icon i {
@@ -1769,11 +1789,12 @@ header .btn-signup {
   right: -2000px;
   line-height: 20px;
   color: #fff;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   background-color: #fff;
   border-radius: 25px;
-  transition: 1s;
+  transition: .5s;
   opacity: 0;
   font-size: 14px;
 }
